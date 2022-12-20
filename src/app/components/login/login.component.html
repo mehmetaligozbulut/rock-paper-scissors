@@ -1,0 +1,28 @@
+<div class="col-md-12 bg-game">
+    <form [formGroup]="loginForm" class="form-signin text-center">
+      <h1 class="h3 mb-3 font-weight-normal text-color-white">
+        Taş Kağıt Makas Oyununa Hoş Geldiniz
+      </h1>
+      <label for="kullaniciAdi" class="sr-only font-weight-bold text-color-white"
+        >Kullanıcı Adınız</label
+      >
+      <input
+        type="text"
+        id="kullaniciAdi"
+        class="form-control"
+        placeholder="Kullanıcı Adınız"
+        formControlName="username"
+        required
+        autofocus
+      />
+      <button
+        class="btn btn-lg btn-primary btn-block mt-4"
+        type="submit"
+        [disabled]="!loginForm.valid"
+        (click)="loginSubmit()"
+      >
+        Oyna
+      </button>
+    </form>
+  </div>
+  

@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  background: cadetblue;
+  border-radius: 10%;
+  position: absolute;
+  top: 33%;
+  left: 39%
+}
+  
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.bg-game {
+  background: url('./assets/images/tas-kagit-makas.jpg') center center fixed;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.text-color-white {
+  color: #FFF;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

@@ -1,0 +1,18 @@
+<button class="d-none" #openButton data-toggle="modal" data-target="#myModal">Open</button>
+
+  <div class="modal fade" #closebutton id="myModal" role="dialog">
+    <div class="modal-dialog" (clickOutside) = outsideClick($event)>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">SONUÇ</h4>
+        </div>
+        <div class="modal-body">
+            <h2 class="text-center">{{ state.resultMessage }}</h2>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-primary" id="closeModal" (click)="playAgain()">Tekrar Oyna</button>
+          <button type="button" class="btn btn-primary" id="closeModal" (click)="changeUser()">Kullanıcı Değiştir</button>
+         </div>
+      </div>
+    </div>
+  </div>
