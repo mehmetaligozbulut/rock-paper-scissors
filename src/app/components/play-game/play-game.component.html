@@ -10,21 +10,21 @@
   <div class="px-4 text-center border-bottom">
     <h1 class="display-4 fw-bold py-4">Hoşgeldiniz "{{ gameState.username }}"</h1>
     <div class="col-lg-6 mx-auto">
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <img src="./../../../assets/images/tas.jpg" class="px-4 cursor-pointer" (click)="buttonClick('Taş')">
-        <img src="./../../../assets/images/kagit.jpg" class="px-4 cursor-pointer" (click)="buttonClick('Kağıt')">
-        <img src="./../../../assets/images/makas.jpg" class="px-4 cursor-pointer" (click)="buttonClick('Makas')">
+      <div class="mb-5">
+        <img src="./../../../assets/images/tas.jpg" class="px-4 cursor-pointer img-responsive" (click)="buttonClick('Taş')">
+        <img src="./../../../assets/images/kagit.jpg" class="px-4 cursor-pointer img-responsive" (click)="buttonClick('Kağıt')">
+        <img src="./../../../assets/images/makas.jpg" class="px-4 cursor-pointer img-responsive" (click)="buttonClick('Makas')">
       </div>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-between mb-5" *ngIf="gameState.selectedItem.pc || gameState.selectedItem.your">
+      <div class="d-flex justify-content-between mb-5" *ngIf="gameState.selectedItem.pc || gameState.selectedItem.your">
         <div>
           <h3>Siz</h3>
           <h4>{{ gameState.yourScore }}</h4>
-          <img src="./../../../assets/images/{{ gameState.selectedItem.your | lowercase | englishCaracter }}.jpg">
+          <img class="img-responsive" src="./../../../assets/images/{{ gameState.selectedItem.your | lowercase | englishCaracter }}.jpg">
         </div>
         <div>
           <h3>PC</h3>
           <h4>{{ gameState.pcScore }}</h4>
-          <img src="./../../../assets/images/{{ gameState.selectedItem.pc | lowercase | englishCaracter }}.jpg">
+          <img class="img-responsive" src="./../../../assets/images/{{ gameState.selectedItem.pc | lowercase | englishCaracter }}.jpg">
         </div>
       </div>
     </div>

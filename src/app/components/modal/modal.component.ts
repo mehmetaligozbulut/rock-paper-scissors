@@ -40,9 +40,7 @@ export class ModalComponent {
     }
 
     outsideClick(hasClickedOutside) {
-        if (this.openModal && hasClickedOutside) {
-            this.playAgain();
-        }
+        console.warn('hasClickedOutside', hasClickedOutside)
     }
 
     changeUser() {

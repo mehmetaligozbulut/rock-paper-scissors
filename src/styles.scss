@@ -5,9 +5,6 @@
   margin: auto;
   background: cadetblue;
   border-radius: 10%;
-  position: absolute;
-  top: 33%;
-  left: 39%
 }
   
 .form-signin .form-control {
@@ -21,12 +18,12 @@
 .bg-game {
   background: url('./assets/images/tas-kagit-makas.jpg') center center fixed;
   min-height: 100%;
-  min-width: 1024px;
   width: 100%;
   height: auto;
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
 }
 
 .text-color-white {
@@ -35,4 +32,10 @@
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 455px) {
+  .img-responsive {
+    width: 140px;
+  }
 }
